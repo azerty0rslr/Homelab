@@ -43,17 +43,15 @@ Dans notre cas, pour la sélection des logiciels, sélectionnez les paramètres 
 
 ### GRUM
 Nous installons donc GRUM.
-![image](https://github.com/user-attachments/assets/75c9896a-d63b-4a6e-a972-27669762bcfa)
+![image](https://github.com/user-attachments/assets/75c9896a-d63b-4a6e-a972-27669762bcfa)  
+
 Sur le périphérique que nous propose la VM.
-![image](https://github.com/user-attachments/assets/0cd219b3-01ff-4a15-b773-bbfb50df52de)
+![image](https://github.com/user-attachments/assets/0cd219b3-01ff-4a15-b773-bbfb50df52de)  
 
 Notre installation se termine ...
-![image](https://github.com/user-attachments/assets/f0f38527-acf4-414d-9a73-507de2a5cbd0)
+![image](https://github.com/user-attachments/assets/f0f38527-acf4-414d-9a73-507de2a5cbd0)  
+
 Rentrez le nom d'utilisateur choisi plus tôt ainsi que le mot de passe.
+Et voilà Debian est désormais installé sur notre VM !  
 
-
-
-![image](https://github.com/user-attachments/assets/ddbda36f-16db-42c7-b837-f0d891b689e8)
-
-Et voilà Debian est désormais installé sur notre VM !
 ![image](https://github.com/user-attachments/assets/a9cbfecd-40de-4390-ae3e-751cee9ea35f)
