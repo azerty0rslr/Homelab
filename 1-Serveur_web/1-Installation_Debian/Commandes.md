@@ -2,12 +2,12 @@
 mv nom_fichier nom_dossier/ : déplace un fichier  
 mv nom_fichier nouveau_nom : renomme un fichier  
 cp nom_fichier nom_copie : copie un fichier  
-ln -s nom_fichier dossier/nom_du_lien : créer un lien symbolique  (fichier est mit en rouge, le lien se détaille en faisant ls -l)
-sudo -s : pour être admin (root)
-exit : pour quitter sudo
-ctrl + c : arrêter exécution d'une commande
-ctrl + x : pour quitter l'éditeur
-clear : nettoyer
+ln -s nom_fichier dossier/nom_du_lien : créer un lien symbolique  (fichier est mit en rouge, le lien se détaille en faisant ls -l)  
+sudo -s : pour être admin (root)  
+exit : pour quitter sudo  
+ctrl + c : arrêter exécution d'une commande  
+ctrl + x : pour quitter l'éditeur  
+clear : nettoyer  
 nom_commande --help : affiche la page de manuel  
 mkdir nom_dossier : créer un dossier  
 rmdir nom_dossier : retire un dossier (on ne peut pas supprimer un dossier remplit)  
