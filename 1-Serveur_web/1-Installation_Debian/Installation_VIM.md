@@ -17,7 +17,7 @@ Pour voir la syntaxe il suffit de taper ':syntax on'
 ![image](https://github.com/user-attachments/assets/aeef6a03-77bf-4a71-9570-3b50460d77e8)  
 
 ## Créer un fichier de configuration
-Pour configurer le comportement de VIM, pour qu'il reste identique.  
+Pour configurer le comportement de VIM, pour qu'il reste identique il faut créer un fichier .vimrc, des exemples de configuration poussé de VIM sont disponibles sur internet en tapant vimrc configuration.  
 Tout d'abord il faut se rendre dans son dossier personnel (cd ~)  
 Puis créer un fichier .vimrc (vi .vimrc)  
 Exemple pour mettre la syntaxe obligatoirement sur VIM :  
