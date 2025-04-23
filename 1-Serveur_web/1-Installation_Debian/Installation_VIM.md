@@ -4,7 +4,7 @@ Pour cela nous allons essayer VI (version moins puissante que VIM mais présente
 En mode naviguation les touches JKLM ainsi que les flèches directionnelles permettent de naviguer dans le fichier.  
 Pour passer en mode insertion il faut taper 'i' et pour sortir il faut taper sur 'echap'.  
 L'avantage majeur de l'éditeur est son nombre conséquent de raccourcis : https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf  
-**Exemples : **  
+**Exemples :**  
 - dupliquer une ligne - faire 'yy' sur la ligne puis 'p' pour copier  
 - supprimer une ligne - 'd'  
 Pour quitter VI il faut être en mode navigation et taper ':q'  
