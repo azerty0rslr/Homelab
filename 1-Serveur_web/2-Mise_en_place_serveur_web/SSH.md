@@ -17,4 +17,28 @@ Dans ma situation la commande ne marchait pas puisqu'aucun port n'étais configu
 ![image](https://github.com/user-attachments/assets/143201eb-79a2-473f-9453-df3a08ab7dce)
 
 # Amélioration sécurité
-Désormais nous allons améliorer la sécurité du SSH. Pour commencer nous allons modifier son fichier de configuration de la manière suivante. vim /etc/ssh/sshd_config  
+Désormais nous allons améliorer la sécurité du SSH. Pour commencer nous allons modifier son fichier de configuration de la manière suivante. vim /etc/ssh/sshd_config.
+Nous modifions deux paramètres : 
+- Le port que l'on passe au port 5789
+- Le PermitRootLogin que l'on mets en no
+= ces deux modifications nous permettent une plus grande sécurité.
+![image](https://github.com/user-attachments/assets/ead732f7-5a14-438a-8f4e-0c7c1e370b8f)
+Pour quitter la modification 'echap' et ':x'
+On redémarre désormais SSH de la manière suivante : sudo service ssh restart
+![image](https://github.com/user-attachments/assets/dae17e92-b30d-45a3-a61f-5e7fd8dabec5)
+On retourne désormais sur VirtualBox pour ajouter nos modifications dans la 'Redirection de ports'.
+![image](https://github.com/user-attachments/assets/aed4c90a-3497-4898-b87c-6e24f576d0d5)
+
+Pour plus d'amélioration de sécurité, nous allons empêcher les utilisateurs de se connecter avec un mot de passe afin d'utiliser un système de clés.
+Pour cela nous allons générer une clée de la manière suivante.
+ssh-keygen -t rsa -b 4096 -C "azerty0rslr@gmail.com"
+-t rsa : pour le type de clé (rsa ou dsa)
+-b 4096 : pour le nombre de bytes (on considère sécurisé au delà de 2000)
+-C "azerty0rslr@gmail.com" : adresse mail de contact à qui appartient la clé
+On fait 'entrer' dans la partie où la clé sera sauvegardée.
+Puis il faut entrer une "passphrase", une phrase à entrer pour utiliser la clé : ici on utilise demodemo
+![image](https://github.com/user-attachments/assets/35b54976-2617-4d51-a7c2-92f3553ee071)
+On se reconnecte ensuite à notre serveur, puis on créer un dossier à la racine. 
+![image](https://github.com/user-attachments/assets/de35d0c1-6d35-403e-8475-d17710c7dfb7)
+
+
