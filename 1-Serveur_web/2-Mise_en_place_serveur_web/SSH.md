@@ -42,3 +42,5 @@ On se reconnecte ensuite à notre serveur, puis on créer un dossier à la racin
 ![image](https://github.com/user-attachments/assets/de35d0c1-6d35-403e-8475-d17710c7dfb7)
 
 
+![image](https://github.com/user-attachments/assets/1d5116ec-e653-40ab-95f9-985e108cc735)
+3yy
