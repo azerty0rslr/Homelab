@@ -40,7 +40,25 @@ Puis il faut entrer une "passphrase", une phrase à entrer pour utiliser la clé
 ![image](https://github.com/user-attachments/assets/35b54976-2617-4d51-a7c2-92f3553ee071)
 On se reconnecte ensuite à notre serveur, puis on créer un dossier à la racine. 
 ![image](https://github.com/user-attachments/assets/de35d0c1-6d35-403e-8475-d17710c7dfb7)
-
-
+On récupère d'abord la clé publique :
+- on va dans .ssh (cd .shh) puis on ouvre le fichier créé précédement avec la commande vim id_rsa.pub
+![image](https://github.com/user-attachments/assets/5e9a6f1c-eb83-46be-bff0-86633f1c47b6)
+- puis on copie la clé publique avec la commande 5yy 
 ![image](https://github.com/user-attachments/assets/1d5116ec-e653-40ab-95f9-985e108cc735)
-3yy
+- enfin on colle cette clé avec la commande p après être revenu dans authorized_keys (pour cela faire :q! pour quitter id_rsa.pub puis faire vim authorized_keys qui créera automatiquement ce fichier et rentrera dedans)
+![image](https://github.com/user-attachments/assets/f09cec53-faef-4fcc-b3e5-558c634335fd)
+Pour quitter ce fichier et le sauvegarder on fait :wq. Ensuite on modifie les autorisations sur le fichier
+![image](https://github.com/user-attachments/assets/f86ac605-6fd1-4aed-a49f-283f9fb85a53)
+Maintenant si on se reconnecte, on ne nous demande plus le mot de passe mais la passphrase.
+![image](https://github.com/user-attachments/assets/62a79a8a-dd87-4469-bff0-580efbf5966d)
+
+On peut maintenant modifier la configuration ssh en faisant :
+sudo vim /etc/ssh/sshd_config
+On trouve la ligne PasswordAuthentication (on peut taper /PasswordAuthentication pour arriver directement sur la ligne), on se mets en mode insertion et on remplace le yes par no. Puis on quitte avec :wq.
+![image](https://github.com/user-attachments/assets/d0593bfd-a499-4623-8a33-5f799c463425)
+Puis je peux redémarrer ssh avec sudo service ssh restart. Je fais exit
+⚠️ ATTENTION à ne pas supprimer id_rsa.pub ni à le renommer sinon on ne peux plus se connecter !
+Une mauvaise configuration du SSH peut nous bloquer du serveur il faut donc faire très attention lorsqu'on le paramètre.
+
+
+
